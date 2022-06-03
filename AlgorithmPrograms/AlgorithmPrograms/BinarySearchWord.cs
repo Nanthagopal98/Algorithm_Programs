@@ -14,30 +14,16 @@ namespace AlgorithmPrograms
             for (int i = 0; i < text.Length; i++)
             {
                 int val = string.Compare(input, text[i]);
-                
-               // int val = input.CompareTo(text[i]);
-
                 if (val == 0)
                 {
                     Console.WriteLine(val);
                     Console.WriteLine(text[i]);
-                }
-                if (val < 1)
-                {
-                    Console.WriteLine(val);
-                    
-                }
-                if (val > 1)
-                {
-                    Console.WriteLine(val);
-
-                }
-
-
-
-
-            }
-
+                    Console.WriteLine("Entered word present in " + i + " index");
+                    return;
+                }    
+            }          
+            Console.WriteLine("Word not present");
+            return;
         }
     }
 }
