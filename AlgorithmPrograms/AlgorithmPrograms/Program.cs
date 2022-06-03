@@ -1,5 +1,6 @@
 ﻿Console.WriteLine("1 to run Permutations");
 Console.WriteLine("2 to run Binary Search Word");
+Console.WriteLine("3 to run InserTion Sort");
 int select = Convert.ToInt32(Console.ReadLine());
 switch (select)
 {
@@ -11,6 +12,12 @@ switch (select)
         AlgorithmPrograms.BinarySearchWord binary = new AlgorithmPrograms.BinarySearchWord();
         binary.BinaryOutput("Nantha");
         break;
+    case 3:
+        AlgorithmPrograms.InsertionSort sort = new AlgorithmPrograms.InsertionSort();
+        sort.StringInserTionSort();
+        break;
+
+        
 }
 
 
