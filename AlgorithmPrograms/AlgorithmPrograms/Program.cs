@@ -3,6 +3,7 @@ Console.WriteLine("2 to run Binary Search Word");
 Console.WriteLine("3 to run InserTion Sort");
 Console.WriteLine("4 to run Bubble Sort");
 Console.WriteLine("5 to run Anagram");
+Console.WriteLine("6 to run MergeSort");
 int select = Convert.ToInt32(Console.ReadLine());
 switch (select)
 {
@@ -25,6 +26,15 @@ switch (select)
     case 5:
         AlgorithmPrograms.CheckAnagram run = new AlgorithmPrograms.CheckAnagram();
         run.Anagram();
+        break;
+    case 6:
+        AlgorithmPrograms.MergeSort mergesort = new AlgorithmPrograms.MergeSort();
+        int[] array = { 30, 20, 50, 70, 120, 180, 100, 40 };       
+        Console.WriteLine("Before Sorting:");
+        mergesort.Print(array);
+        Console.WriteLine("\nAfter Sorting");
+        mergesort.sort(array, 0, array.Length - 1);
+        mergesort.Print(array);
         break;
 
 
