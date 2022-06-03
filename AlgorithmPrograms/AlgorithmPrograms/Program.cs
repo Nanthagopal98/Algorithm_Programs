@@ -2,6 +2,7 @@
 Console.WriteLine("2 to run Binary Search Word");
 Console.WriteLine("3 to run InserTion Sort");
 Console.WriteLine("4 to run Bubble Sort");
+Console.WriteLine("5 to run Anagram");
 int select = Convert.ToInt32(Console.ReadLine());
 switch (select)
 {
@@ -20,6 +21,10 @@ switch (select)
     case 4:
         AlgorithmPrograms.BubbleSort bubbleSort = new AlgorithmPrograms.BubbleSort();
         bubbleSort.BubbleSortofInteger();
+        break;
+    case 5:
+        AlgorithmPrograms.CheckAnagram run = new AlgorithmPrograms.CheckAnagram();
+        run.Anagram();
         break;
 
 
