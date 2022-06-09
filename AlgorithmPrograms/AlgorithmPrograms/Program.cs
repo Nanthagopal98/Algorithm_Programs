@@ -6,6 +6,7 @@ Console.WriteLine("5 to run Anagram");
 Console.WriteLine("6 to run MergeSort");
 Console.WriteLine("7 to run Unordered List");
 Console.WriteLine("8 to run Ordered List");
+Console.WriteLine("9 to run Balanced Parenthesis");
 int select = Convert.ToInt32(Console.ReadLine());
 switch (select)
 {
@@ -50,8 +51,12 @@ switch (select)
             ordedlist.OrderedList();
             break;
         }
-
-
+    case 9:
+        {
+            AlgorithmPrograms.Balanced_Parentheses balanced = new AlgorithmPrograms.Balanced_Parentheses();
+            balanced.BalanceChecker();
+            break;
+        }
 }
 
 
