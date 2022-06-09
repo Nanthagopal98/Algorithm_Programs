@@ -5,6 +5,7 @@ Console.WriteLine("4 to run Bubble Sort");
 Console.WriteLine("5 to run Anagram");
 Console.WriteLine("6 to run MergeSort");
 Console.WriteLine("7 to run Unordered List");
+Console.WriteLine("8 to run Ordered List");
 int select = Convert.ToInt32(Console.ReadLine());
 switch (select)
 {
@@ -41,6 +42,12 @@ switch (select)
         {
             AlgorithmPrograms.Unordered_List unordedlist = new AlgorithmPrograms.Unordered_List();
             unordedlist.UnorderedList();
+            break;
+        }
+    case 8:
+        {
+            AlgorithmPrograms.Ordered_List ordedlist = new AlgorithmPrograms.Ordered_List();
+            ordedlist.OrderedList();
             break;
         }
 
