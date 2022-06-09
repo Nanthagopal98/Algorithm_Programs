@@ -17,9 +17,10 @@ namespace AlgorithmPrograms
             {
                 intArray[i] = Convert.ToInt32(values[i]);
             }
+            Console.WriteLine("Before sort : ");
             for (int i = 0; i < values.Length; i++)
             {
-                Console.WriteLine("Before sort : " + values[i]);
+                Console.WriteLine(values[i]);
             }
             for (int i = 0; i < values.Length; i++)
             {
@@ -35,9 +36,10 @@ namespace AlgorithmPrograms
                 }
             }
             Console.WriteLine("------------------------");
+            Console.WriteLine("After sort : ");
             for (int i = 0; i < values.Length; i++)
             {
-                Console.WriteLine("After sort : " + intArray[i]);
+                Console.WriteLine(intArray[i]);
             }
         }
     }
